@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6 {
 /*Intro*/
 .intro {
     width: 100%;
-    height: 100vh;
+    height: 100vh; /* во весь экран по высоте */
     background: url("../images/Intro.jpg") center no-repeat;
     background-size: cover;
 }
@@ -38,28 +38,55 @@ h1, h2, h3, h4, h5, h6 {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 1000; /* важность */
+    padding-top: 30px;
 }
 
-.header__logo{
+.header__inner {
+    display: flex;
+    justify-content: space-between; /* элементы по разные стороны контейнера */
+    align-items: center; /* выровнять элементы по центру */
+}
+
+.header__logo {
     font-size: 30px;
     color: #fff;
     font-weight: 700;
 }
 
 /*Nav*/
-.nav{
+.nav {
     font-size: 14px;
-    text-transform: uppercase;
+    text-transform: uppercase; /* весь текст большими буквами*/
 }
 
-.nav__link{
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
     color: #fff;
     text-decoration: none;
-    transition: color .2s linear;
+    transition: color .2s linear; /* смена цвета текста с задержкой в 0.2сек */
+    position: relative;
+}
+
+.nav__link:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    display: none;
+    background-color: #fce38a;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
 }
 
 .nav__link:hover {
     color: #fce38a;
+}
 
+.nav__link:hover:after {
+    display: block;
 }
