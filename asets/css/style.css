@@ -17,16 +17,49 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*Conteiner*/
-.conteiner{
+.conteiner {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/*intro*/
-.intro{
+/*Intro*/
+.intro {
     width: 100%;
     height: 100vh;
     background: url("../images/Intro.jpg") center no-repeat;
     background-size: cover;
+}
+
+/*Header*/
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header__logo{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 700;
+}
+
+/*Nav*/
+.nav{
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav__link{
+    color: #fff;
+    text-decoration: none;
+    transition: color .2s linear;
+}
+
+.nav__link:hover {
+    color: #fce38a;
+
 }
