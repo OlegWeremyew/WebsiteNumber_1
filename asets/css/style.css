@@ -259,6 +259,7 @@ h1, h2, h3, h4, h5, h6 {
 .about {
     display: flex;
     justify-content: space-between;
+    margin-top: 80px;
 }
 
 .about__item {
@@ -305,4 +306,14 @@ h1, h2, h3, h4, h5, h6 {
     transform: translate3d(0, -50%, 0);
     opacity: 0;
     transition: opacity .2s linear;
+}
+
+/* Statistics  */
+.statistics {
+    background-color: #95e1d3;
+}
+
+.stat {
+    display: block;
+    justify-content: space-between;
 }
