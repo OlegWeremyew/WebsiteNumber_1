@@ -166,11 +166,11 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     position: absolute;
     bottom: 0;
-    left:0;
+    left: 0;
     z-index: 1;
 }
 
-.slider__inner{
+.slider__inner {
     display: flex;
     justify-content: space-between;
 }
@@ -209,4 +209,26 @@ h1, h2, h3, h4, h5, h6 {
 .slider__num {
     font-size: 24px;
     font-weight: 700;
+}
+
+/* Section */
+
+.section {
+
+}
+
+.section__header {
+
+}
+
+.section__suptitle {
+
+}
+
+.section__title {
+
+}
+
+.section__text {
+
 }
