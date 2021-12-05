@@ -314,6 +314,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .stat {
-    display: block;
-    justify-content: space-between;
+    display: flex;
+}
+
+.stat__item {
+    flex: 1 1 0; /* выровняли по ширине страницы и всё одинаковые по ширине*/
+    border-left: 2px solid #b5eae0;
+    text-align: center;
+    padding: 70px 25px;
+    color: #fff;
+}
+
+.stat__item:last-child { /* рамка для последнего через chaild */
+    border-right: 2px solid #b5eae0;
+}
+
+.stat__count{
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.stat__text{
+    font-size: 14px;
+    text-transform: uppercase;
 }
