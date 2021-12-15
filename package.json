@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://github.com/OlegWeremyew/WebsiteNumber_1",
   "scripts": {
     "deploy": "gh-pages -d src"
   },
@@ -16,7 +17,6 @@
   "bugs": {
     "url": "https://github.com/OlegWeremyew/WebsiteNumber_1/issues"
   },
-  "homepage": "https://github.com/OlegWeremyew/WebsiteNumber_1#readme",
   "devDependencies": {
     "gh-pages": "^3.2.3"
   }
