@@ -238,6 +238,7 @@ hr {
 }
 
 .section--devices{
+    margin-bottom: 40px;
     background: url("../images/devices/device_bg.jpg") center no-repeat;
     background-size: cover;
     padding-bottom: 0;
@@ -419,4 +420,22 @@ hr {
     bottom: -80px;
     right: 0;
     z-index: 1;
+}
+
+/*  We do */
+
+.wedo{
+    display: flex;
+}
+
+.wedo_item{
+    width: 50%;
+}
+
+.accardion{
+
+}
+
+.accardion_item{
+
 }
