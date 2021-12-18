@@ -571,9 +571,14 @@ hr {
     border-top: 3px solid #ccc;
     border-left: 3px solid #ccc;
 
-    transform: rotate(45deg);
 }
 
 .reviews__btn--pref{
+    left: 0;
+    transform: rotate(-45deg);
+}
 
+.reviews__btn--next{
+    right: 0;
+    transform: rotate(135deg);
 }
