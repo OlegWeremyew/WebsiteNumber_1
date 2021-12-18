@@ -78,7 +78,7 @@ hr {
     height: 5px;
 
     background-color: #fff;
-    margin: 60px auto; /* сверху60 справа-слева по центру */
+    margin: 0 auto 60px; /* сверху20 справа-слева по центру */
 }
 
 
@@ -159,7 +159,6 @@ hr {
 /* Button */
 .btn {
     display: inline-block;
-    vertical-align: top;
     padding: 8px 30px;
 
     border: 3px solid #fff;
@@ -433,12 +432,22 @@ hr {
 }
 
 /* Accardion  */
-.accordion{
-    border: 1px solid #e5e5e5;
+.accordion {
+
 }
 
 .accordion_item {
+    border: 1px solid #e5e5e5;
+    margin-bottom: 10px;
+}
 
+.accordion_item.active .accordion__header {
+    border-bottom-color: #e5e5e5;
+}
+
+.accordion_item.active .accordion__header:after {
+    transform: translateY(-50%) rotate(-45deg);
+    margin-top: 5px;
 }
 
 .accordion_item.active .accordion__content {
@@ -446,9 +455,11 @@ hr {
 }
 
 .accordion__header {
-    border-bottom: 1px solid #e5e5e5;
     padding: 20px 20px 20px 65px;
     position: relative;
+
+    border-bottom: 1px solid transparent;
+    cursor: pointer; /*Создаётся визуальное отображение наведения как на ссылку*/
 }
 
 .accordion__header:after {
@@ -461,10 +472,10 @@ hr {
     border-right: 3px solid #ccc;
 
     position: absolute;
-    top: 60%;
+    top: 50%;
     right: 20px;
     z-index: 1;
-    transform: translateY(-50%) rotate(-45deg);
+    transform: translateY(-50%) rotate(135deg);
 }
 
 .accordion__icon {
@@ -484,7 +495,7 @@ hr {
 
 .accordion__content {
     padding: 15px 20px;
-    display:none; /* скрыть контент */
+    display: none; /* скрыть контент */
 
     font-size: 15px;
     color: #999;
