@@ -432,22 +432,42 @@ hr {
     width: 50%;
 }
 
-/* Cccardion  */
-.accardion {
+/* Accardion  */
+.accordion{
     border: 1px solid #e5e5e5;
 }
 
-.accardion_item {
+.accordion_item {
 
 }
 
-.accardion__header {
+.accordion_item.active .accordion__content {
+    display: block;
+}
+
+.accordion__header {
     border-bottom: 1px solid #e5e5e5;
-    padding: 20px 20px 20px 60px;
+    padding: 20px 20px 20px 65px;
     position: relative;
 }
 
-.accardion__icon {
+.accordion__header:after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+
+    border-top: 3px solid #ccc;
+    border-right: 3px solid #ccc;
+
+    position: absolute;
+    top: 60%;
+    right: 20px;
+    z-index: 1;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.accordion__icon {
     position: absolute;
     top: 50%;
     left: 20px;
@@ -456,14 +476,15 @@ hr {
 
 }
 
-.accardion__title {
+.accordion__title {
     font-size: 14px;
     color: #333;
     text-transform: uppercase;
 }
 
-.accardion__content {
+.accordion__content {
     padding: 15px 20px;
+    display:none; /* скрыть контент */
 
     font-size: 15px;
     color: #999;
