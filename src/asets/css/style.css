@@ -677,7 +677,7 @@ hr {
 
 .works__image {
     display: block;
-    max-width: 100%;
+    max-width: 100%; /* для текста*/
     height: auto;
     transition: opacity .2s linear;
 }
