@@ -296,6 +296,9 @@ hr {
 
 .card__item {
     width: 380px;
+}
+
+.card__inner{
     background-color: #95e1d3;
     position: relative;
 }
