@@ -542,7 +542,7 @@ hr {
     font-family: "Kaushan Script";
 }
 
-.reviews__author:before{
+.reviews__author:before {
     content: "";
     display: inline-block;
     vertical-align: middle;
@@ -558,7 +558,7 @@ hr {
     /* 2 стрички выше скрывают текст*/
 
     position: absolute;
-    top:50%;
+    top: 50%;
     z-index: 1;
     transform: translateY(-50%);
 
@@ -575,12 +575,27 @@ hr {
 
 }
 
-.reviews__btn--pref{
+.reviews__btn--pref {
     left: 0;
     transform: rotate(-45deg);
 }
 
-.reviews__btn--next{
+.reviews__btn--next {
     right: 0;
     transform: rotate(135deg);
+}
+
+/*  Social  */
+.social {
+display: flex;
+}
+
+.social__icon {
+    background-color: #fce38a;
+    border-right: 1px solid #f38181;
+
+    font-size: 30px;
+    text-decoration: none;
+    color: #f38181;
+
 }
