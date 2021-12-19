@@ -641,12 +641,23 @@ hr {
 
 /* logos */
 
-.logos{
+.logos {
     display: flex;
     justify-content: space-around;
-    align-content: center;
+    align-items: center;
 }
 
-.logos__item{
+.logos__item {
 
+}
+
+/* Works */
+
+.works {
+    display: flex;
+
+}
+
+.works__column{
+    flex: 1 1 0;
 }
