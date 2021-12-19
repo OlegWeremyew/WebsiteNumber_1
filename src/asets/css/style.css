@@ -655,7 +655,6 @@ hr {
 
 .works {
     display: flex;
-
 }
 
 .works__column {
@@ -678,6 +677,8 @@ hr {
 
 .works__image {
     display: block;
+    max-width: 100%;
+    height: auto;
     transition: opacity .2s linear;
 }
 
