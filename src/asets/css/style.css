@@ -256,13 +256,13 @@ hr {
 
 .section--clients {
     background: #f5f5f5 url("../images/clients/clients_bg.png") center no-repeat;
+    -webkit-background-size: cover;
     background-size: cover;
 }
 
 .section--map {
     padding: 40px 0;
     background: #f5f5f5 url("../images/map/map_bg.png") center no-repeat;
-    background-size: cover;
 }
 
 .section__header {
@@ -290,7 +290,7 @@ hr {
     display: block;
     width: 60px;
     height: 3px;
-    margin: 40px auto;
+    margin: 30px auto;
 
     background-color: #f38181;
 
@@ -299,8 +299,6 @@ hr {
 .section__text {
     font-size: 15px;
     color: #999999;
-    line-height: 1.8;
-    margin-bottom: 90px;
 }
 
 /* Card */
@@ -1258,9 +1256,9 @@ hr {
         padding-left: 175px;
     }
 
-    /*  Clients */
+    /* Clients */
     .clients {
-        width: 600px;
+        max-width: 600px;
         margin: 0 auto;
     }
 
@@ -1498,7 +1496,7 @@ hr {
         width: 100%;
     }
 
-    /*  Clients */
+    /* Clients */
     .clients__photo {
         position: static;
     }
@@ -1510,7 +1508,6 @@ hr {
 
     .clients__text:before {
         margin: 15px auto;
-
     }
 
     /* Subscribe */
