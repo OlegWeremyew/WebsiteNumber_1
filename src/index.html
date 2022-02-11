@@ -4,27 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MoGo</title>
-    <link rel="stylesheet" href="./asets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 <script src="https://kit.fontawesome.com/879320d8a1.js" crossorigin="anonymous"></script>
-<header class="header active">
+<header class="header" id="header">
     <div class="container">
         <div class="header__inner">
-            <div class="header__logo">Mogo</div>
+            <div class="header__logo"  data-scroll="#intro">MoGo</div>
 
-            <nav class="nav">
-                <a class="nav__link active" href="#">About</a>
-                <a class="nav__link" href="#">Service</a>
-                <a class="nav__link" href="#">Work</a>
-                <a class="nav__link" href="#">Blog</a>
-                <a class="nav__link" href="#">Contact</a>
+            <nav class="nav" id="nav">
+                <a class="nav__link" href="#" data-scroll="#about">About</a>
+                <a class="nav__link" href="#" data-scroll="#services">Service</a>
+                <a class="nav__link" href="#" data-scroll="#works">Work</a>
+                <a class="nav__link" href="#" data-scroll="#blog">Blog</a>
+                <a class="nav__link" href="#" data-scroll="#footer">Contact</a>
                 <a class="nav__link" href="#"><i class="fas fa-shopping-cart"></i></a>
                 <a class="nav__link" href="#"><i class="fas fa-search"></i></a>
             </nav>
 
-            <button class="nav-toggle active" type="button">
-                <span class="nav-toggle__item">Menu</span>
+            <button class="nav_toggle" id="nav_toggle" type="button">
+                <span class="nav_toggle__item">Menu</span>
             </button>
         </div>
     </div>
@@ -32,7 +32,8 @@
 
 <div class="page">
 
-    <div class="intro">
+    <!--Intro-->
+    <div class="intro" id="intro">
         <div class="container">
             <div class="intro__inner">
                 <h2 class="intro__suptitle">Creative Template</h2>
@@ -67,7 +68,8 @@
 
     </div> <!-- /.intro  -->
 
-    <section class="section">
+    <!--About-->
+    <section class="section" id="about">
         <div class="container">
 
             <div class="section__header">
@@ -85,7 +87,7 @@
                 <div class="card__item">
                     <div class="card__inner">
                         <div class="card__img">
-                            <img src="./asets/images/about/1.jpg" alt="about us 1">
+                            <img src="assets/images/about/1.jpg" alt="about us 1">
                         </div>
                         <div class="card__text">super team</div>
                     </div>
@@ -94,7 +96,7 @@
                 <div class="card__item">
                     <div class="card__inner">
                         <div class="card__img">
-                            <img src="./asets/images/about/2.jpg" alt="about us 1">
+                            <img src="assets/images/about/2.jpg" alt="about us 1">
                         </div>
                         <div class="card__text">super team</div>
                     </div>
@@ -103,7 +105,7 @@
                 <div class="card__item">
                     <div class="card__inner">
                         <div class="card__img">
-                            <img src="./asets/images/about/3.jpg" alt="about us 1">
+                            <img src="assets/images/about/3.jpg" alt="about us 1">
                         </div>
                         <div class="card__text">super team</div>
                     </div>
@@ -114,6 +116,7 @@
         </div>  <!-- /.container  -->
     </section>
 
+    <!--Statistics-->
     <div class="statistics">
         <div class="container">
 
@@ -143,7 +146,8 @@
         </div>
     </div>
 
-    <section class="section">
+    <!--Services-->
+    <section class="section" id="services">
         <div class="container">
             <div class="section__header">
                 <h3 class="section__suptitle">We work with</h3>
@@ -152,7 +156,7 @@
 
             <div class="services">
                 <div class="services__item services__item--border">
-                    <img class="services__icon" src="./asets/images/services/photography.png" alt="photography">
+                    <img class="services__icon" src="assets/images/services/photography.png" alt="photography">
                     <div class="services__title">photography</div>
                     <div class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor.
@@ -160,7 +164,7 @@
                 </div>
 
                 <div class="services__item services__item--border">
-                    <img class="services__icon" src="./asets/images/services/web%20design.png" alt="Web Design">
+                    <img class="services__icon" src="assets/images/services/web%20design.png" alt="Web Design">
                     <div class="services__title">Web Design</div>
                     <div class="services__text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor.
@@ -168,28 +172,28 @@
                 </div>
 
                 <div class="services__item services__item--border">
-                    <img class="services__icon" src="./asets/images/services/creativity.png" alt="Creativity">
+                    <img class="services__icon" src="assets/images/services/creativity.png" alt="Creativity">
                     <div class="services__title">Creativity</div>
                     <div class="services__text">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
                     </div>
                 </div>
 
                 <div class="services__item">
-                    <img class="services__icon" src="./asets/images/services/seo.png" alt="SEO">
+                    <img class="services__icon" src="assets/images/services/seo.png" alt="SEO">
                     <div class="services__title">SEO</div>
                     <div class="services__text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
                     </div>
                 </div>
 
                 <div class="services__item">
-                    <img class="services__icon" src="./asets/images/services/css_html.png" alt="Css/Html">
+                    <img class="services__icon" src="assets/images/services/css_html.png" alt="Css/Html">
                     <div class="services__title">Css/Html</div>
                     <div class="services__text">Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.
                     </div>
                 </div>
 
                 <div class="services__item">
-                    <img class="services__icon" src="./asets/images/services/digital.png" alt="digital">
+                    <img class="services__icon" src="assets/images/services/digital.png" alt="digital">
                     <div class="services__title">digital</div>
                     <div class="services__text">Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
                     </div>
@@ -198,6 +202,7 @@
         </div> <!-- container -->
     </section>
 
+    <!--Devices-->
     <section class="section section--devices">
         <div class="container">
 
@@ -207,14 +212,15 @@
             </div>
 
             <div class="devices">
-                <img class="devices__item" src="./asets/images/devices/ipad.png" alt="ipad">
-                <img class="devices__item devices__item--iphone" src="./asets/images/devices/phone.png" alt="iphone">
+                <img class="devices__item" src="assets/images/devices/ipad.png" alt="ipad">
+                <img class="devices__item devices__item--iphone" src="assets/images/devices/phone.png" alt="iphone">
             </div>
 
 
         </div>
     </section>
 
+    <!--WeDo-->
     <section class="section">
         <div class="container">
 
@@ -230,7 +236,7 @@
 
             <div class="weDo">
                 <div class="weDo_item">
-                    <img class="weDo__img" src="./asets/images/services/service/man_neer_wall.png" alt="">
+                    <img class="weDo__img" src="assets/images/services/service/man_neer_wall.png" alt="">
                 </div>
 
                 <div class="weDo_item">
@@ -239,7 +245,7 @@
 
                         <div class="accordion_item">
                             <div class="accordion__header">
-                                <img class="accordion__icon" src="./asets/images/services/service/photography.png"
+                                <img class="accordion__icon" src="assets/images/services/service/photography.png"
                                      alt="photography icon">
                                 <div class="accordion__title">Photography</div>
                             </div>
@@ -256,7 +262,7 @@
 
                         <div class="accordion_item active">
                             <div class="accordion__header">
-                                <img class="accordion__icon" src="./asets/images/services/service/creativity.png"
+                                <img class="accordion__icon" src="assets/images/services/service/creativity.png"
                                      alt="icon creativity">
                                 <div class="accordion__title">creativity</div>
                             </div>
@@ -272,7 +278,7 @@
 
                         <div class="accordion_item">
                             <div class="accordion__header">
-                                <img class="accordion__icon" src="./asets/images/services/service/web%20design.png"
+                                <img class="accordion__icon" src="assets/images/services/service/web%20design.png"
                                      alt="icon web design">
                                 <div class="accordion__title">web design</div>
                             </div>
@@ -296,6 +302,7 @@
 
     </section>
 
+    <!--Reviews 1-->
     <div class="section section--gray">
         <div class="container">
 
@@ -303,7 +310,7 @@
                 <a class="reviews__btn reviews__btn--pref" href="#">Pref</a>
                 <a class="reviews__btn reviews__btn--next" href="#">Next</a>
                 <div class="reviews__item">
-                    <img class="reviews_photo" src="./asets/images/services/service/message.png" alt="">
+                    <img class="reviews_photo" src="assets/images/services/service/message.png" alt="">
                     <div class="reviews__text">
                         “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
@@ -317,6 +324,7 @@
 
     </div>
 
+    <!--Team-->
     <section class="section">
         <div class="container">
 
@@ -336,7 +344,7 @@
                 <div class="card__item">
                     <div class="card__inner">
                         <div class="card__img">
-                            <img src="./asets/images/whoWeAre/MatthewDix.png" alt="MatthewDix"/>
+                            <img src="assets/images/whoWeAre/MatthewDix.png" alt="MatthewDix"/>
                         </div>
                         <div class="card__text">
                             <div class="social">
@@ -369,7 +377,7 @@
                 <div class="card__item">
                     <div class="card__inner">
                         <div class="card__img">
-                            <img src="./asets/images/whoWeAre/ChristopherCampbell.png" alt="ChristopherCampbell"/>
+                            <img src="assets/images/whoWeAre/ChristopherCampbell.png" alt="ChristopherCampbell"/>
                         </div>
                         <div class="card__text">
                             <div class="social">
@@ -402,7 +410,7 @@
                 <div class="card__item">
                     <div class="card__inner">
                         <div class="card__img">
-                            <img src="./asets/images/whoWeAre/MichaelFertig.png" alt="MichaelFertig"/>
+                            <img src="assets/images/whoWeAre/MichaelFertig.png" alt="MichaelFertig"/>
                         </div>
                         <div class="card__text">
                             <div class="social">
@@ -437,32 +445,34 @@
         </div><!--container-->
     </section>
 
+    <!--Logos-->
     <div class="section section--gray">
         <div class="container">
             <div class="logos">
                 <div class="logos__item">
-                    <img class="logos__img" src="asets/images/whoWeAre/icons/1.png" alt="icon 1">
+                    <img class="logos__img" src="assets/images/whoWeAre/icons/1.png" alt="icon 1">
                 </div>
                 <div class="logos__item">
-                    <img class="logos__img" src="asets/images/whoWeAre/icons/2.png" alt="icon 2">
+                    <img class="logos__img" src="assets/images/whoWeAre/icons/2.png" alt="icon 2">
                 </div>
                 <div class="logos__item">
-                    <img class="logos__img" src="asets/images/whoWeAre/icons/3.png" alt="icon 3">
+                    <img class="logos__img" src="assets/images/whoWeAre/icons/3.png" alt="icon 3">
                 </div>
                 <div class="logos__item">
-                    <img class="logos__img" src="asets/images/whoWeAre/icons/4.png" alt="icon 4">
+                    <img class="logos__img" src="assets/images/whoWeAre/icons/4.png" alt="icon 4">
                 </div>
                 <div class="logos__item">
-                    <img class="logos__img" src="asets/images/whoWeAre/icons/5.png" alt="icon 5">
+                    <img class="logos__img" src="assets/images/whoWeAre/icons/5.png" alt="icon 5">
                 </div>
                 <div class="logos__item">
-                    <img class="logos__img" src="asets/images/whoWeAre/icons/6.png" alt="icon 6">
+                    <img class="logos__img" src="assets/images/whoWeAre/icons/6.png" alt="icon 6">
                 </div>
             </div><!--logos-->
         </div><!--container-->
     </div> <!--section section--gray-->
 
-    <section class="section">
+    <!--Works-->
+    <section class="section" id="works">
 
         <div class="container">
             <div class="section__header">
@@ -481,7 +491,7 @@
 
             <div class="works__column">
                 <div class="works__item">
-                    <img class="works__image" src="asets/images/works/1.jpg" alt="1">
+                    <img class="works__image" src="assets/images/works/1.jpg" alt="1">
                     <div class="works__info">
                         <div><i class="far fa-images"></i></div>
                         <div class="works__title">creatively designed</div>
@@ -489,26 +499,7 @@
                     </div>
                 </div>
                 <div class="works__item">
-                    <img class="works__image" src="asets/images/works/2.jpg" alt="2">
-                    <div class="works__info">
-                        <div><i class="far fa-images"></i></div>
-                        <div class="works__title">creatively designed</div>
-                        <div class="works__text">Lorem ipsum dolor sit</div>
-                    </div>
-                </div>
-            </div><!--works__column-->
-
-            <div class="works__column">
-                <div class="works__item">
-                    <img class="works__image" src="asets/images/works/3.jpg" alt="3">
-                    <div class="works__info">
-                        <div><i class="far fa-images"></i></div>
-                        <div class="works__title">creatively designed</div>
-                        <div class="works__text">Lorem ipsum dolor sit</div>
-                    </div>
-                </div>
-                <div class="works__item">
-                    <img class="works__image" src="asets/images/works/4.jpg" alt="4">
+                    <img class="works__image" src="assets/images/works/2.jpg" alt="2">
                     <div class="works__info">
                         <div><i class="far fa-images"></i></div>
                         <div class="works__title">creatively designed</div>
@@ -519,7 +510,15 @@
 
             <div class="works__column">
                 <div class="works__item">
-                    <img class="works__image" src="asets/images/works/5.jpg" alt="5">
+                    <img class="works__image" src="assets/images/works/3.jpg" alt="3">
+                    <div class="works__info">
+                        <div><i class="far fa-images"></i></div>
+                        <div class="works__title">creatively designed</div>
+                        <div class="works__text">Lorem ipsum dolor sit</div>
+                    </div>
+                </div>
+                <div class="works__item">
+                    <img class="works__image" src="assets/images/works/4.jpg" alt="4">
                     <div class="works__info">
                         <div><i class="far fa-images"></i></div>
                         <div class="works__title">creatively designed</div>
@@ -530,7 +529,18 @@
 
             <div class="works__column">
                 <div class="works__item">
-                    <img class="works__image" src="asets/images/works/6.jpg" alt="6">
+                    <img class="works__image" src="assets/images/works/5.jpg" alt="5">
+                    <div class="works__info">
+                        <div><i class="far fa-images"></i></div>
+                        <div class="works__title">creatively designed</div>
+                        <div class="works__text">Lorem ipsum dolor sit</div>
+                    </div>
+                </div>
+            </div><!--works__column-->
+
+            <div class="works__column">
+                <div class="works__item">
+                    <img class="works__image" src="assets/images/works/6.jpg" alt="6">
                     <div class="works__info">
                         <div><i class="far fa-images"></i></div>
                         <div class="works__title">creatively designed</div>
@@ -538,7 +548,7 @@
                     </div>
                 </div>
                 <div class="works__item">
-                    <img class="works__image" src="asets/images/works/7.jpg" alt="7">
+                    <img class="works__image" src="assets/images/works/7.jpg" alt="7">
                     <div class="works__info">
                         <div><i class="far fa-images"></i></div>
                         <div class="works__title">creatively designed</div>
@@ -551,6 +561,7 @@
 
     </section>
 
+    <!--Reviews 2-->
     <div class="section">
         <div class="container">
 
@@ -558,7 +569,7 @@
                 <a class="reviews__btn reviews__btn--pref" href="#">Pref</a>
                 <a class="reviews__btn reviews__btn--next" href="#">Next</a>
                 <div class="reviews__item">
-                    <img class="reviews_photo" src="./asets/images/works/avatar.png" alt="">
+                    <img class="reviews_photo" src="assets/images/works/avatar.png" alt="">
                     <div class="reviews__text">
                         “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
@@ -572,6 +583,7 @@
 
     </div>
 
+    <!--Clients 1-->
     <div class="section section--clients">
         <div class="container">
 
@@ -589,7 +601,7 @@
             <div class="clients">
 
                 <div class="clients__item">
-                    <img class="clients__photo" src="./asets/images/clients/1.png" alt="Matthew Dix Photo">
+                    <img class="clients__photo" src="assets/images/clients/1.png" alt="Matthew Dix Photo">
                     <div class="clients__content">
                         <div class="clients__name">Matthew Dix</div>
                         <div class="clients__prof">Graphic Design</div>
@@ -601,7 +613,7 @@
                 </div>
 
                 <div class="clients__item">
-                    <img class="clients__photo" src="./asets/images/clients/2.png" alt="Nick Karvounis Photo">
+                    <img class="clients__photo" src="assets/images/clients/2.png" alt="Nick Karvounis Photo">
                     <div class="clients__content">
                         <div class="clients__name">Nick Karvounis</div>
                         <div class="clients__prof">Graphic Design</div>
@@ -613,7 +625,7 @@
                 </div>
 
                 <div class="clients__item">
-                    <img class="clients__photo" src="./asets/images/clients/3.png" alt="Jaelynn Castillo Photo">
+                    <img class="clients__photo" src="assets/images/clients/3.png" alt="Jaelynn Castillo Photo">
                     <div class="clients__content">
                         <div class="clients__name">Jaelynn Castillo</div>
                         <div class="clients__prof">Graphic Design</div>
@@ -626,7 +638,7 @@
                 </div>
 
                 <div class="clients__item">
-                    <img class="clients__photo" src="./asets/images/clients/4.png" alt="Mike Petrucci Photo">
+                    <img class="clients__photo" src="assets/images/clients/4.png" alt="Mike Petrucci Photo">
                     <div class="clients__content">
                         <div class="clients__name">Mike Petrucci</div>
                         <div class="clients__prof">Graphic Design</div>
@@ -641,8 +653,8 @@
         </div><!--container-->
     </div>
 
-
-    <div class="section">
+    <!--Blog-->
+    <div class="section" id="blog">
         <div class="container">
             <div class="section__header">
                 <h3 class="section__suptitle">Our stories</h3>
@@ -654,7 +666,7 @@
                 <div class="blog__item">
                     <div class="blog__header">
                         <a href="#">
-                            <img class="blog__photo" src="./asets/images/blog/1.png" alt="1">
+                            <img class="blog__photo" src="assets/images/blog/1.png" alt="1">
                         </a>
                         <div class="blog__data">
                             <div class="blog__date-day">15</div>
@@ -685,7 +697,7 @@
                 <div class="blog__item">
                     <div class="blog__header">
                         <a href="#">
-                            <img class="blog__photo" src="./asets/images/blog/2.png" alt="2">
+                            <img class="blog__photo" src="assets/images/blog/2.png" alt="2">
                         </a>
                         <div class="blog__data">
                             <div class="blog__date-day">14</div>
@@ -715,7 +727,7 @@
                 <div class="blog__item">
                     <div class="blog__header">
                         <a href="#">
-                            <img class="blog__photo" src="./asets/images/blog/3.png" alt="3">
+                            <img class="blog__photo" src="assets/images/blog/3.png" alt="3">
                         </a>
                         <div class="blog__data">
                             <div class="blog__date-day">12</div>
@@ -747,6 +759,7 @@
         </div><!--container-->
     </div>
 
+    <!--Map-->
     <div class="section section--map">
         <div class="container">
             <div class="map">
@@ -758,7 +771,8 @@
         </div>
     </div>
 
-    <footer class=footer>
+    <!--Footer-->
+    <footer class="footer" id="footer">
         <div class="container">
 
             <div class="footer__inner">
@@ -816,7 +830,7 @@
                     <div class="footer__title">blogs</div>
 
                     <div class="blogs__item">
-                        <img class="blogs__image" src="./asets/images/mogo/blogs/1.png" alt="1">
+                        <img class="blogs__image" src="assets/images/mogo/blogs/1.png" alt="1">
                         <div class="blogs__content">
                             <a class="blogs__title" href="#">
                                 Lorem ipsum dolor sit amet,
@@ -828,7 +842,7 @@
                     </div><!--blogs__item-->
 
                     <div class="blogs__item">
-                        <img class="blogs__image" src="./asets/images/mogo/blogs/2.png" alt="2">
+                        <img class="blogs__image" src="assets/images/mogo/blogs/2.png" alt="2">
                         <div class="blogs__content">
                             <a class="blogs__title" href="#">
                                 Consectetur adipiscing elit,
@@ -840,7 +854,7 @@
                     </div><!--blogs__item-->
 
                     <div class="blogs__item">
-                        <img class="blogs__image" src="./asets/images/mogo/blogs/3.png" alt="3">
+                        <img class="blogs__image" src="assets/images/mogo/blogs/3.png" alt="3">
                         <div class="blogs__content">
                             <a class="blogs__title" href="#">
                                 sed do eiusmod tempor
@@ -859,39 +873,39 @@
                     <div class="instagram">
 
                         <a class="instagram__item" href="#" target="_blank">
-                            <img src="./asets/images/mogo/instagram/1.png" alt="1">
+                            <img src="assets/images/mogo/instagram/1.png" alt="1">
                         </a>
 
                         <a class="instagram__item" href="#" target="_blank">
-                            <img src="./asets/images/mogo/instagram/2.png" alt="2">
+                            <img src="assets/images/mogo/instagram/2.png" alt="2">
                         </a>
 
                         <a class="instagram__item" href="#" target="_blank">
-                            <img src="./asets/images/mogo/instagram/3.png" alt="3">
+                            <img src="assets/images/mogo/instagram/3.png" alt="3">
                         </a>
 
                         <a class="instagram__item" href="#" target="_blank">
-                            <img src="./asets/images/mogo/instagram/4.png" alt="4">
+                            <img src="assets/images/mogo/instagram/4.png" alt="4">
                         </a>
 
                         <a class="instagram__item" href="#" target="_blank">
-                            <img src="./asets/images/mogo/instagram/5.png" alt="5">
+                            <img src="assets/images/mogo/instagram/5.png" alt="5">
                         </a>
 
                         <a class="instagram__item" href="#" target="_blank">
-                            <img src="./asets/images/mogo/instagram/6.png" alt="6">
+                            <img src="assets/images/mogo/instagram/6.png" alt="6">
                         </a>
 
                         <a class="instagram__item" href="#" target="_blank">
-                            <img src="./asets/images/mogo/instagram/7.png" alt="7">
+                            <img src="assets/images/mogo/instagram/7.png" alt="7">
                         </a>
 
                         <a class="instagram__item" href="#" target="_blank">
-                            <img src="./asets/images/mogo/instagram/8.png" alt="8">
+                            <img src="assets/images/mogo/instagram/8.png" alt="8">
                         </a>
 
                         <a class="instagram__item" href="#" target="_blank">
-                            <img src="./asets/images/mogo/instagram/9.png" alt="9">
+                            <img src="assets/images/mogo/instagram/9.png" alt="9">
                         </a>
                     </div> <!--instagram-->
 
@@ -908,5 +922,7 @@
 
 </div> <!--/page-->
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="assets/js/app.js"></script>
 </body>
 </html>

@@ -104,7 +104,7 @@ hr {
 }
 
 .header.fixed {
-
+    padding: 10px 0;
     background-color: #eb8b8d;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 
@@ -135,30 +135,29 @@ hr {
 /*Nav*/
 .nav {
     font-size: 14px;
-    text-transform: uppercase; /* весь текст большими буквами*/
+    text-transform: uppercase;
 }
 
 .nav__link {
     display: inline-block;
     vertical-align: top;
     margin: 0 20px;
-    position: relative; /* относится к подчёркиванию */
+    position: relative;
 
     color: #fff;
     text-decoration: none;
 
-    transition: color .3s linear; /* смена цвета текста с задержкой в 0.2сек */
+    transition: color .3s linear;
 }
 
 .nav__link:after {
 
-    /* создание подчёркивания */
     content: "";
     display: block;
     width: 100%;
     height: 3px;
 
-    background-color: #fce38a; /* цвет подчёркивания */
+    background-color: #fce38a;
     opacity: 0;
 
     position: absolute;
@@ -183,7 +182,7 @@ hr {
 }
 
 /* Nav toggl */
-.nav-toggle {
+.nav_toggle {
     width: 30px;
     padding: 10px 0;
     display: none;
@@ -201,7 +200,11 @@ hr {
     z-index: 1;
 }
 
-.nav-toggle__item {
+.nav_toggle:focus {
+    outline: 0;
+}
+
+.nav_toggle__item {
     display: block;
     width: 100%;
     height: 3px;
@@ -218,12 +221,12 @@ hr {
     transition: background .2s linear;
 }
 
-.nav-toggle.active .nav-toggle__item {
+.nav_toggle.active .nav_toggle__item {
     background: none;
 }
 
-.nav-toggle__item:before,
-.nav-toggle__item:after {
+.nav_toggle__item:before,
+.nav_toggle__item:after {
     content: "";
     width: 100%;
     height: 3px;
@@ -237,20 +240,20 @@ hr {
     transition: transform .2s linear;
 }
 
-.nav-toggle__item:before {
+.nav_toggle__item:before {
     top: -8px;
 }
 
-.nav-toggle__item:after {
+.nav_toggle__item:after {
     bottom: -8px;
 }
 
-.nav-toggle.active .nav-toggle__item:before {
+.nav_toggle.active .nav_toggle__item:before {
     transform-origin: left top;
     transform: rotate(45deg) translate3d(0px, -2px, 0);
 }
 
-.nav-toggle.active .nav-toggle__item:after {
+.nav_toggle.active .nav_toggle__item:after {
     transform-origin: left bottom;
     transform: rotate(-45deg) translate3d(-1px, 3px, 0)
 }
@@ -1409,13 +1412,17 @@ hr {
         background-color: #eb8b8d;
     }
 
+    .nav.active {
+        display: block;
+    }
+
     .nav__link {
         display: block;
         margin: 0;
         padding: 8px 20px;
     }
 
-    .nav-toggle {
+    .nav_toggle {
         display: block;
     }
 
